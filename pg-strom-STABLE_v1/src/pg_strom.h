@@ -803,7 +803,7 @@ long_as_double(cl_long ival)
 	datum.ival = ival;
 	return datum.fval;
 }
-
+/*通过联合体操作，long,double都是8字节*/
 static inline cl_long
 double_as_long(cl_double fval)
 {
